@@ -1,0 +1,100 @@
+{
+  ScrollView;
+  layout_height="fill";
+  layout_width="fill";
+  {
+    LinearLayout;
+    layout_height="fill";
+    layout_width="fill";
+    orientation="vertical";
+    gravity="top|center";
+    --顶栏
+    {
+      ImageView;
+      ImageBitmap = getDrawableEx(R.drawable.ic_launcher);
+      layout_height="24dp";
+      layout_width="24dp";
+    };
+    {
+      TextView;
+      text=[[莘应用
+]]..g__config.innerversion;
+      layout_marginBottom="16dp";
+    };
+    --轮播图
+    {
+      LinearLayout;
+      id="bannerparent";
+      layout_height="30%h";
+      layout_width="match_parent";
+
+    };
+    --按钮
+    buildButtonEx("应用","#ab3b3a",function()
+      activity.newActivity("activitys/applist")
+    end);
+    buildButtonEx("搜索","#ab3b3a",function()
+      activity.newActivity("activitys/search")
+    end);
+    buildButtonEx("分类","#ab3b3a",function()
+      activity.newActivity("activitys/category")
+    end);
+    buildButtonEx("设置","#ab3b3a",function()
+      activity.newActivity("activitys/settings")
+    end);
+    buildButtonEx("退出","#ffb11b",function()
+      activity.finish()
+    end);
+    --[[
+    {
+      Button;
+      text="应用";
+      layout_height="wrap";
+      layout_width="fill";
+      onClick=function()
+        activity.newActivity("activitys/applist")
+      end;
+    };
+    {
+      Button;
+      text="分类";
+      layout_height="wrap";
+      layout_width="fill";
+      onClick=function()
+        activity.newActivity("activitys/category")
+      end;
+    };
+    --[ [
+    {
+      Button;
+      text="测试页面";
+      layout_height="wrap";
+      layout_width="fill";
+      onClick=function()
+        activity.newActivity("activitys/test")
+      end
+    };
+
+    {
+      Button;
+      text="设置";
+      layout_height="wrap";
+      layout_width="fill";
+      layout_marginBottom="16dp";
+      onClick=function()
+        activity.newActivity("activitys/settings")
+      end;
+    };
+    {
+      Button;
+      text="退出";
+      layout_height="wrap";
+      layout_width="fill";
+      onClick=function()
+        activity.finish()
+      end
+    };
+]]
+  };
+
+}

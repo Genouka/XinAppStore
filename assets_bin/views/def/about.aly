@@ -1,0 +1,82 @@
+{
+  ScrollView;
+  layout_height="fill";
+  layout_width="fill";
+  {
+    LinearLayout;
+    layout_height="fill";
+    layout_width="fill";
+    orientation="vertical";
+    {
+      Button;
+      text="返回";
+      layout_height="wrap";
+      layout_width="fill";
+      onClick=function()
+        activity.finish()
+      end
+    };
+    {
+      Button;
+      text="检查更新";
+      layout_width="fill";
+      onClick=function()
+        activity.newActivity("activitys/applist",Object{"search","莘应用"})
+      end
+    };
+    {
+      TextView;
+      gravity="center";
+      text=[[★关于★
+本应用的第一个版本开发于2024-02-02！
+为了打造手表上最棒的应用商店，我们开发了此应用！
+
+★你正在使用的本应用的相关信息：
+版本号：]]..(packinfo.versionCode or "")..[[
+
+版本：]]..(packinfo.versionName or "")..[[
+
+包名：]]..(packinfo.packageName or "")..[[
+
+热更新版本：]]..(hconfig.hotversion or "")..[[
+
+内部版本号：]]..(config.innerversion or "")..[[
+
+
+★开发：
+GenOuka
+
+★数据源：
+奕奕 原易档商店迁移至此
+GenOuka 原Rare商店迁移至此
+GenOuka 莘应用开发者平台（新源）
+
+★设计：
+GenOuka
+
+感谢给予支持的各位！如有遗漏请联系我补充
+
+★官网：
+莘商店官网：edsc.top
+易档社区官网：edsq.top
+Rare计划官网：rare.genouka.rr.nu
+
+♎更新日志
+1.2
+界面大改
+增加了分类功能
+1.1
+增加了跳转安装未知来源应用界面
+添加了清理图片缓存
+修复了已经下载再点安装会重复下载问题
+增加了特殊的签名安装功能
+增加了检查更新功能
+增加了搜索应用的功能
+1.0
+第一个版本
+]];
+      layout_width="fill";
+    };
+
+  };
+}

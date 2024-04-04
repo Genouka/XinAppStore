@@ -1,0 +1,22 @@
+{
+  LinearLayout;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+
+  {
+    PullingLayout;--Pulling刷新
+    PullUpEnabled=true;--上拉刷新
+    --PullDownEnabled=true;--下拉刷新
+    layout_width='fill';--布局宽度
+    --layout_height='';--布局高度
+    --layout_margin='2%w';--边距
+    id="刷新";
+    {
+      ListView;
+      id="list";
+      layout_height="fill";
+      layout_width="fill";
+    };
+  };
+};

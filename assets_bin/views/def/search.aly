@@ -1,0 +1,29 @@
+{
+  LinearLayout;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+  {
+    Button;
+    text="返回";
+    layout_height="wrap";
+    layout_width="fill";
+    onClick=function()
+      activity.finish()
+    end
+  };
+  {
+    EditText;
+    id="keytext";
+    layout_height="wrap";
+    layout_width="fill";
+    hint=String("关键词");
+  };
+  {
+    Button;
+    id="nextbtn";
+    layout_height="wrap";
+    layout_width="fill";
+    text=String("搜索");
+  };
+}

@@ -1,0 +1,5 @@
+{
+  source="edang_mirror",
+  install="1",
+  downpath="/sdcard/XinAppStore"
+}

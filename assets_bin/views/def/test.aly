@@ -1,0 +1,44 @@
+{
+  ScrollView;
+  layout_height="fill";
+  layout_width="fill";
+  {
+    LinearLayout;
+    layout_height="fill";
+    layout_width="fill";
+    orientation="vertical";
+    {
+      TextView;
+      gravity="center";
+      id="pro";
+      text="Hello World";
+      layout_height="wrap";
+      layout_width="fill";
+    };
+    {
+      Button;
+      text="退出";
+      layout_height="wrap";
+      layout_width="fill";
+      onClick=function()
+        activity.finish()
+      end
+    };
+    {
+      Button;
+      id="download";
+      gravity="center";
+      text="下载测试";
+      layout_height="wrap";
+      layout_width="fill";
+    };
+    {
+      Button;
+      id="ins";
+      gravity="center";
+      text="安装测试";
+      layout_height="wrap";
+      layout_width="fill";
+    };
+  };
+}

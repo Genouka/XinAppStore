@@ -1,0 +1,64 @@
+{
+  LinearLayout;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="horizontal";
+  {
+    ImageView;
+    id="img";
+    ImageTintList=nil;
+    layout_width="48dp";
+    layout_height="48dp";
+    --scaleType=ImageView.ScaleType.FIT_CENTER;
+    adjustViewBounds=true;
+  };
+  {
+    LinearLayout;
+    layout_height="fill";
+    layout_width="fill";
+    orientation="vertical";
+    {
+      LinearLayout;
+      layout_height="wrap";
+      layout_width="fill";
+      orientation="horizontal";
+      {
+        TextView;
+        id="title";
+        gravity="left";
+        textColor=0xffeeeeee;
+        --text="); ?";
+        layout_height="wrap";
+        layout_width="wrap";
+        Selected=true;
+        ellipsize="marquee";
+        --singleLine=true;
+        lines=1;
+      };
+      {
+        TextView;
+        id="author";
+        gravity="right";
+        textColor=0xffd7c4bb;
+        --text="); ?";
+        layout_height="wrap";
+        layout_width="fill";
+        Selected=true;
+        ellipsize="marquee";
+        singleLine=true;
+      };
+    };
+    {
+      TextView;
+      id="extra";
+      gravity="right";
+      textColor=0xff3a8fb7;
+      --text="); ?";
+      layout_height="wrap";
+      layout_width="fill";
+      Selected=true;
+      ellipsize="marquee";
+      singleLine=true;
+    };
+  };
+}

@@ -1,0 +1,57 @@
+{
+  LinearLayout;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="horizontal";
+  {
+    ImageView;
+    id="img";
+    layout_width="48dp";
+    layout_height="48dp";
+    --scaleType=ImageView.ScaleType.FIT_CENTER;
+    adjustViewBounds=true;
+  };
+  {
+    LinearLayout;
+    layout_height="fill";
+    layout_width="fill";
+    orientation="vertical";
+    {
+      TextView;
+      id="title";
+      gravity="left";
+      textColor=0xffeeeeee;
+      --text="); ?";
+      layout_height="wrap";
+      layout_width="fill";
+      Selected=true;
+      ellipsize="marquee";
+      --singleLine=true;
+      lines=1;
+    };
+    {
+      TextView;
+      id="author";
+      gravity="left";
+      textColor=0xffd7c4bb;
+      --text="); ?";
+      layout_height="wrap";
+      layout_width="fill";
+      Selected=true;
+      ellipsize="marquee";
+      singleLine=true;
+    };
+    {
+      TextView;
+      id="extra";
+      gravity="left";
+      textColor=0xff3a8fb7;
+      --text="); ?";
+      layout_height="wrap";
+      layout_width="fill";
+      Selected=true;
+      ellipsize="marquee";
+      singleLine=true;
+    };
+  };
+}
