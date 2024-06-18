@@ -100,8 +100,8 @@ function refresh_list()
 (WearOS2手表/华为手表)]],
           [[3.Amarket终端安装方式
 (WearOS2/3/4手表)]],
-          [[4.测试安装方式1
-(特殊型号手表)]]
+          [[4.华为儿童手表安装方式
+(特殊型号手表的v1+v2签名)]]
         }
         AlertDialog.Builder(this)
         .setTitle("设置安装方式")
